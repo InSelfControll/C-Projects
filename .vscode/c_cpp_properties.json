@@ -14,7 +14,12 @@
             "cppStandard": "c++98",
             "intelliSenseMode": "linux-gcc-x64",
             "compilerArgs": [
-                "-nostdinc++"
+                "-nostdinc++",
+                "-lm",
+                "-g",
+                "${fileDirname}/*.cpp",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
             ]
         },
         {
